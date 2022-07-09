@@ -18,12 +18,17 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Add Folders
+      run: mkdir llvm && cd llvm
+    
     - name: Download LLVM
       uses: actions/checkout@v3
       with: 
         repository: llvm/llvm-project
-        path: ${{github.workspace}}/llvm
-        
+    
+    - name: Rebase
+      run: cd ../
+      
     - name: Download IWYU 
       uses: actions/checkout@v3
       with: 
