@@ -36,7 +36,7 @@ jobs:
         path: iwyu
         
     - name: Rebase
-      run: dir
+      run: cd iwyu && dir
       
       
     #- name: Configure CMake LLVM
