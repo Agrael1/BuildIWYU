@@ -25,6 +25,7 @@ jobs:
       uses: actions/checkout@v3
       with: 
         repository: llvm/llvm-project
+        path: llvm
     
     - name: Rebase
       run: cd ../
@@ -33,6 +34,7 @@ jobs:
       uses: actions/checkout@v3
       with: 
         repository: include-what-you-use/include-what-you-use
+        path: iwyu
 
     - name: Configure CMake LLVM
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
