@@ -21,35 +21,38 @@ jobs:
     - name: Add Folders
       run: mkdir llvm && cd llvm
     
-    - name: Download LLVM
-      uses: actions/checkout@v3
-      with: 
-        repository: llvm/llvm-project
-        path: llvm
+   # - name: Download LLVM
+    #  uses: actions/checkout@v3
+    #  with: 
+    #    repository: llvm/llvm-project
+    #    path: llvm
     
-    - name: Rebase
-      run: dir && cd ../
+    
       
     - name: Download IWYU 
       uses: actions/checkout@v3
       with: 
         repository: include-what-you-use/include-what-you-use
         path: iwyu
-
-    - name: Configure CMake LLVM
-      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
-      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-      run: cmake -S ${{github.workspace}}/llvm -B ${{github.workspace}}/out_llvm -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" 
-
-
-    - name: Configure CMake IWYU
-      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
-      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-      run: cmake -B ${{github.workspace}}/out_iwyu -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} 
+        
+    - name: Rebase
+      run: dir
       
-    - name: Build LLVM
+      
+    #- name: Configure CMake LLVM
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      #run: cmake -S ${{github.workspace}}/llvm -B ${{github.workspace}}/out_llvm -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" 
+
+
+   # - name: Configure CMake IWYU
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+     # run: cmake -B ${{github.workspace}}/out_iwyu -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} 
+      
+    #- name: Build LLVM
       # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/out_llvm --config ${{env.BUILD_TYPE}}
+     # run: cmake --build ${{github.workspace}}/out_llvm --config ${{env.BUILD_TYPE}}
       
     - name: Build LLVM
       # Build your program with the given configuration
