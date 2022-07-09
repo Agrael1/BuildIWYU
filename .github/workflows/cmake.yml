@@ -28,7 +28,7 @@ jobs:
         path: llvm
     
     - name: Rebase
-      run: cd ../
+      run: dir && cd ../
       
     - name: Download IWYU 
       uses: actions/checkout@v3
