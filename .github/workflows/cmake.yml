@@ -21,13 +21,14 @@ jobs:
     - name: Add Folders
       run: mkdir llvm && cd llvm
     
-   # - name: Download LLVM
-    #  uses: actions/checkout@v3
-    #  with: 
-    #    repository: llvm/llvm-project
-    #    path: llvm
+    - name: Download LLVM
+      uses: actions/checkout@v3
+      with: 
+        repository: llvm/llvm-project
+        path: llvm
     
-    
+    - name: Rebase
+      run: cd llvm && dir
       
     - name: Download IWYU 
       uses: actions/checkout@v3
