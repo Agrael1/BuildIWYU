@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: Download LLVM
-      uses: actions/chekout@v3
+      uses: actions/checkout@v3
       with: 
         repository: llvm/llvm-project
         path: ${{github.workspace}}/llvm
