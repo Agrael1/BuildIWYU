@@ -21,7 +21,10 @@ jobs:
     
     
     steps: 
+
     - name: Push
+      uses: actions/checkout@v3
+    - name: Dispatch
       run: |
           date > generated.txt
           git config user.name github-actions
