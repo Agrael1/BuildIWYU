@@ -21,55 +21,63 @@ jobs:
     
     
     steps: 
-    - name: Reorganize
-      run: |
-        $temp = "${{github.workspace}}"
-        $pattern = '[\\]'
-        $temp = $temp -replace $pattern, '/'
-        echo "xpath=yellow" >> $GITHUB_ENV
-        echo ${{env.xpath}}/llvm/llvm
-    
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        path: disp
-    
-    - name: Download LLVM
-      uses: actions/checkout@v3
-      with: 
-        repository: llvm/llvm-project
-        path: llvm
+      - name: Set the value
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
       
-    - name: Download IWYU 
-      uses: actions/checkout@v3
-      with: 
-        repository: include-what-you-use/include-what-you-use
-        path: iwyu
+      - name: Use the value
+        run: |
+          echo "${{ env.action_state }}" # This will output 'yellow'
+      
+      - name: Reorganize
+        run: |
+          $temp = "${{github.workspace}}"
+          $pattern = '[\\]'
+          $temp = $temp -replace $pattern, '/'
+          echo "xpath=yellow" >> $GITHUB_ENV
+          echo ${{env.xpath}}/llvm/llvm
+    
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: disp
+    
+      - name: Download LLVM
+        uses: actions/checkout@v3
+        with: 
+          repository: llvm/llvm-project
+          path: llvm
         
+      - name: Download IWYU 
+        uses: actions/checkout@v3
+        with: 
+          repository: include-what-you-use/include-what-you-use
+          path: iwyu
+          
+        
+        
+      - name: Configure CMake LLVM
+        # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+        # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+        run: cmake -S ${{env.xpath}}/llvm/llvm -B ${{env.xpath}}/out_llvm -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" 
+  
+      - name: Build LLVM
+      # Build your program with the given configuration
+        run: cmake --build ${{env.xpath}}/out_llvm --config ${{env.BUILD_TYPE}}
       
       
-    - name: Configure CMake LLVM
+      - name: Configure CMake IWYU
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-      run: cmake -S ${{env.xpath}}/llvm/llvm -B ${{env.xpath}}/out_llvm -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" 
-
-    - name: Build LLVM
-    # Build your program with the given configuration
-      run: cmake --build ${{env.xpath}}/out_llvm --config ${{env.BUILD_TYPE}}
-    
-    
-    - name: Configure CMake IWYU
-    # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
-    # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-      run: cmake -S ${{env.xpath}}/iwyu -B ${{env.xpath}}/out_iwyu -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_DIR="${{env.xpath}}/out_llvm/lib/cmake/llvm" -DClang_DIR="${{env.xpath}}/out_llvm/lib/cmake/clang"
-     
-    - name: Build IWYU
-    # Build your program with the given configuration
-      run: cmake --build ${{env.xpath}}/out_iwyu --config ${{env.BUILD_TYPE}}
-    
-    
-    - name: Dispatch
-      run: |
+        run: cmake -S ${{env.xpath}}/iwyu -B ${{env.xpath}}/out_iwyu -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_DIR="${{env.xpath}}/out_llvm/lib/cmake/llvm" -DClang_DIR="${{env.xpath}}/out_llvm/lib/cmake/clang"
+       
+      - name: Build IWYU
+      # Build your program with the given configuration
+        run: cmake --build ${{env.xpath}}/out_iwyu --config ${{env.BUILD_TYPE}}
+      
+      
+      - name: Dispatch
+        run: |
           xcopy out_iwyu/bin/include-what-you-use.exe disp /y
           cd disp
           date > generated.txt
