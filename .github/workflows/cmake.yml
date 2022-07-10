@@ -55,7 +55,7 @@ jobs:
   
       - name: Build LLVM
       # Build your program with the given configuration
-        run: cmake --build ${{env.xpath}}/out_llvm --config ${{env.BUILD_TYPE}}
+        run: cmake --build ${{env.xpath}}/out_llvm --config ${{env.BUILD_TYPE}} -j 24
       
       
       - name: Configure CMake IWYU
@@ -65,12 +65,12 @@ jobs:
        
       - name: Build IWYU
       # Build your program with the given configuration
-        run: cmake --build ${{env.xpath}}/out_iwyu --config ${{env.BUILD_TYPE}}
+        run: cmake --build ${{env.xpath}}/out_iwyu --config ${{env.BUILD_TYPE}} -j 24
       
       
       - name: Dispatch
         run: |
-          xcopy out_iwyu/bin/include-what-you-use.exe disp /y
+          xcopy .\out_iwyu\bin\include-what-you-use.exe disp /y
           cd disp
           date > generated.txt
           
