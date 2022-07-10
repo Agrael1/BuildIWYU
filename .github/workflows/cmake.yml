@@ -26,7 +26,7 @@ jobs:
           $temp = "${{github.workspace}}"
           $pattern = '[\\]'
           $temp = $temp -replace $pattern, '/'
-          echo "xpath=${temp}" | Out-File -FilePath $env:GITHUB_ENV
+          echo "xpath=${temp}" | Out-File -FilePath $env:GITHUB_ENV -Append
           echo ${{env.xpath}}/llvm/llvm
     
       - name: Checkout
