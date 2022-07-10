@@ -23,7 +23,7 @@ jobs:
     steps: 
     - name: Reorganize
       run: |
-        $temp = `"${{github.workspace}}`"
+        $temp = "${{github.workspace}}"
         $pattern = '[\\]'
         $temp = $temp -replace $pattern, '/'
         echo "xpath=$temp" >> $GITHUB_ENV
