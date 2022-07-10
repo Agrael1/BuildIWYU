@@ -21,12 +21,17 @@ jobs:
     
     
     steps: 
-
-    - name: Push
+    - name: Pull
       uses: actions/checkout@v3
+      with:
+        path: disp
     - name: Dispatch
       run: |
           date > generated.txt
+          xcopy generated.txt disp /y
+          cd disp
+          dir
+          
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
