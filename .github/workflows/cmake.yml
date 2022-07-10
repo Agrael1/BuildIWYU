@@ -21,20 +21,12 @@ jobs:
     
     
     steps: 
-      - name: Set the value
-        run: |
-          echo "action_state=yellow" >> $GITHUB_ENV
-      
-      - name: Use the value
-        run: |
-          echo "${{ env.action_state }}" # This will output 'yellow'
-      
       - name: Reorganize
         run: |
           $temp = "${{github.workspace}}"
           $pattern = '[\\]'
           $temp = $temp -replace $pattern, '/'
-          echo "xpath=yellow" >> $GITHUB_ENV
+          echo "xpath=${temp}" | Out-File -FilePath $env:GITHUB_ENV
           echo ${{env.xpath}}/llvm/llvm
     
       - name: Checkout
