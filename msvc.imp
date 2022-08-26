@@ -1,0 +1,1744 @@
+[
+	#File:algorithm
+
+	{ include: [ "<yvals_core.h>", private, "<algorithm>", public ] },
+	{ include: [ "<xmemory>", private, "<algorithm>", public ] },
+			   
+			   
+	#File:any  
+			   
+	{ include: [ "<yvals_core.h>", private, "<any>", public ] },
+	{ include: [ "<initializer_list>", public, "<any>", public ] },
+	{ include: [ "<type_traits>", public, "<any>", public ] },
+	{ include: [ "<typeinfo>", public, "<any>", public ] },
+	{ include: [ "<utility>", public, "<any>", public ] },
+	{ include: [ "<xmemory>", private, "<any>", public ] },
+			   
+			   
+	#File:arra y
+			   
+	{ include: [ "<yvals_core.h>", private, "<array>", public ] },
+	{ include: [ "<xutility>", private, "<array>", public ] },
+			   
+			   
+	#File:atom ic
+			   
+	{ include: [ "<yvals.h>", private, "<atomic>", public ] },
+	{ include: [ "<cstddef>", public, "<atomic>", public ] },
+	{ include: [ "<cstdint>", public, "<atomic>", public ] },
+	{ include: [ "<cstring>", public, "<atomic>", public ] },
+	{ include: [ "<xatomic.h>", private, "<atomic>", public ] },
+	{ include: [ "<xatomic_wait.h>", private, "<atomic>", public ] },
+	{ include: [ "<xthreads.h>", private, "<atomic>", public ] },
+			   
+			   
+	#File:barr ier
+			   
+	{ include: [ "<yvals.h>", private, "<barrier>", public ] },
+	{ include: [ "<atomic>", public, "<barrier>", public ] },
+	{ include: [ "<climits>", public, "<barrier>", public ] },
+	{ include: [ "<type_traits>", public, "<barrier>", public ] },
+	{ include: [ "<xmemory>", private, "<barrier>", public ] },
+			   
+			   
+	#File:bit  
+			   
+	{ include: [ "<yvals_core.h>", private, "<bit>", public ] },
+	{ include: [ "<intrin0.h>", public, "<bit>", public ] },
+	{ include: [ "<isa_availability.h>", public, "<bit>", public ] },
+	{ include: [ "<limits>", public, "<bit>", public ] },
+	{ include: [ "<type_traits>", public, "<bit>", public ] },
+			   
+			   
+	#File:bits et
+			   
+	{ include: [ "<yvals_core.h>", private, "<bitset>", public ] },
+	{ include: [ "<iosfwd>", public, "<bitset>", public ] },
+	{ include: [ "<limits>", public, "<bitset>", public ] },
+	{ include: [ "<xstring>", private, "<bitset>", public ] },
+			   
+			   
+	#File:cass ert
+			   
+	{ include: [ "<yvals_core.h>", private, "<cassert>", public ] },
+	{ include: [ "<assert.h>", public, "<cassert>", public ] },
+			   
+			   
+	#File:ccom plex
+			   
+	{ include: [ "<yvals_core.h>", private, "<ccomplex>", public ] },
+	{ include: [ "<complex>", public, "<ccomplex>", public ] },
+			   
+			   
+	#File:ccty pe
+			   
+	{ include: [ "<yvals_core.h>", private, "<cctype>", public ] },
+	{ include: [ "<ctype.h>", public, "<cctype>", public ] },
+			   
+			   
+	#File:cerr no
+			   
+	{ include: [ "<yvals_core.h>", private, "<cerrno>", public ] },
+	{ include: [ "<errno.h>", public, "<cerrno>", public ] },
+			   
+			   
+	#File:cfen v
+			   
+	{ include: [ "<yvals_core.h>", private, "<cfenv>", public ] },
+	{ include: [ "<fenv.h>", public, "<cfenv>", public ] },
+			   
+			   
+	#File:cflo at
+			   
+	{ include: [ "<yvals_core.h>", private, "<cfloat>", public ] },
+	{ include: [ "<float.h>", public, "<cfloat>", public ] },
+			   
+			   
+	#File:char conv
+			   
+	{ include: [ "<yvals.h>", private, "<charconv>", public ] },
+	{ include: [ "<cstring>", public, "<charconv>", public ] },
+	{ include: [ "<intrin0.h>", public, "<charconv>", public ] },
+	{ include: [ "<xbit_ops.h>", private, "<charconv>", public ] },
+	{ include: [ "<xcharconv.h>", private, "<charconv>", public ] },
+	{ include: [ "<xcharconv_ryu.h>", private, "<charconv>", public ] },
+	{ include: [ "<xutility>", private, "<charconv>", public ] },
+			   
+			   
+	#File:chro no
+			   
+	{ include: [ "<yvals_core.h>", private, "<chrono>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<chrono>", public ] },
+	{ include: [ "<__msvc_tzdb.hpp>", private, "<chrono>", public ] },
+	{ include: [ "<algorithm>", public, "<chrono>", public ] },
+	{ include: [ "<atomic>", public, "<chrono>", public ] },
+	{ include: [ "<cmath>", public, "<chrono>", public ] },
+	{ include: [ "<compare>", public, "<chrono>", public ] },
+	{ include: [ "<forward_list>", public, "<chrono>", public ] },
+	{ include: [ "<istream>", public, "<chrono>", public ] },
+	{ include: [ "<memory>", public, "<chrono>", public ] },
+	{ include: [ "<optional>", public, "<chrono>", public ] },
+	{ include: [ "<sstream>", public, "<chrono>", public ] },
+	{ include: [ "<string>", public, "<chrono>", public ] },
+	{ include: [ "<vector>", public, "<chrono>", public ] },
+	{ include: [ "<xloctime>", private, "<chrono>", public ] },
+	{ include: [ "<xthreads.h>", private, "<chrono>", public ] },
+	{ include: [ "<concepts>", public, "<chrono>", public ] },
+	{ include: [ "<format>", public, "<chrono>", public ] },
+	{ include: [ "<iomanip>", public, "<chrono>", public ] },
+			   
+			   
+	#File:cint types
+			   
+	{ include: [ "<yvals_core.h>", private, "<cinttypes>", public ] },
+	{ include: [ "<cstdint>", public, "<cinttypes>", public ] },
+	{ include: [ "<inttypes.h>", public, "<cinttypes>", public ] },
+			   
+			   
+	#File:ciso 646
+			   
+	{ include: [ "<yvals.h>", private, "<ciso646>", public ] },
+	{ include: [ "<iso646.h>", public, "<ciso646>", public ] },
+			   
+			   
+	#File:adap ter
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/adapter>", public ] },
+	{ include: [ "<cliext/utility>", public, "<cliext/adapter>", public ] },
+			   
+			   
+	#File:algo rithm
+			   
+	{ include: [ "<cliext/memory>", public, "<cliext/algorithm>", public ] },
+			   
+			   
+	#File:dequ e
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/deque>", public ] },
+			   
+			   
+	#File:func tional
+			   
+	{ include: [ "<cliext/xutility>", public, "<cliext/functional>", public ] },
+			   
+			   
+	#File:hash _map
+			   
+	{ include: [ "<cliext/xhash>", public, "<cliext/hash_map>", public ] },
+	{ include: [ "<cliext/utility>", public, "<cliext/hash_map>", public ] },
+			   
+			   
+	#File:hash _set
+			   
+	{ include: [ "<cliext/xhash>", public, "<cliext/hash_set>", public ] },
+			   
+			   
+	#File:iter ator
+			   
+	{ include: [ "<cliext/xutility>", public, "<cliext/iterator>", public ] },
+			   
+			   
+	#File:list 
+			   
+	{ include: [ "<cliext/functional>", public, "<cliext/list>", public ] },
+	{ include: [ "<cliext/iterator>", public, "<cliext/list>", public ] },
+			   
+			   
+	#File:map  
+			   
+	{ include: [ "<cliext/xtree>", public, "<cliext/map>", public ] },
+	{ include: [ "<cliext/utility>", public, "<cliext/map>", public ] },
+			   
+			   
+	#File:memo ry
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/memory>", public ] },
+			   
+			   
+	#File:nume ric
+			   
+	{ include: [ "<cliext/memory>", public, "<cliext/numeric>", public ] },
+			   
+			   
+	#File:queu e
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/queue>", public ] },
+			   
+			   
+	#File:set  
+			   
+	{ include: [ "<cliext/xtree>", public, "<cliext/set>", public ] },
+			   
+			   
+	#File:stac k
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/stack>", public ] },
+			   
+			   
+	#File:util ity
+			   
+	{ include: [ "<cliext/xutility>", public, "<cliext/utility>", public ] },
+			   
+			   
+	#File:vect or
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/vector>", public ] },
+			   
+			   
+	#File:xhas h
+			   
+			   
+			   
+	#File:xtre e
+			   
+	{ include: [ "<cliext/iterator>", public, "<cliext/xtree>", public ] },
+			   
+			   
+	#File:xuti lity
+			   
+			   
+			   
+	#File:clim its
+			   
+	{ include: [ "<yvals_core.h>", private, "<climits>", public ] },
+	{ include: [ "<limits.h>", public, "<climits>", public ] },
+			   
+			   
+	#File:cloc ale
+			   
+	{ include: [ "<yvals_core.h>", private, "<clocale>", public ] },
+	{ include: [ "<locale.h>", public, "<clocale>", public ] },
+			   
+			   
+	#File:cmat h
+			   
+	{ include: [ "<yvals.h>", private, "<cmath>", public ] },
+	{ include: [ "<cstdlib>", public, "<cmath>", public ] },
+	{ include: [ "<xtr1common>", private, "<cmath>", public ] },
+	{ include: [ "<intrin0.h>", public, "<cmath>", public ] },
+	{ include: [ "<xutility>", private, "<cmath>", public ] },
+			   
+			   
+	#File:code cvt
+			   
+	{ include: [ "<yvals_core.h>", private, "<codecvt>", public ] },
+	{ include: [ "<cwchar>", public, "<codecvt>", public ] },
+	{ include: [ "<locale>", public, "<codecvt>", public ] },
+			   
+			   
+	#File:comp are
+			   
+	{ include: [ "<yvals_core.h>", private, "<compare>", public ] },
+	{ include: [ "<bit>", public, "<compare>", public ] },
+	{ include: [ "<concepts>", public, "<compare>", public ] },
+	{ include: [ "<xtr1common>", private, "<compare>", public ] },
+			   
+			   
+	#File:comp lex
+			   
+	{ include: [ "<yvals_core.h>", private, "<complex>", public ] },
+	{ include: [ "<cmath>", public, "<complex>", public ] },
+	{ include: [ "<cstdint>", public, "<complex>", public ] },
+	{ include: [ "<limits>", public, "<complex>", public ] },
+	{ include: [ "<sstream>", public, "<complex>", public ] },
+	{ include: [ "<type_traits>", public, "<complex>", public ] },
+	{ include: [ "<xutility>", private, "<complex>", public ] },
+	{ include: [ "<ymath.h>", public, "<complex>", public ] },
+	{ include: [ "<emmintrin.h>", public, "<complex>", public ] },
+	{ include: [ "<isa_availability.h>", public, "<complex>", public ] },
+	{ include: [ "<arm64_neon.h>", public, "<complex>", public ] },
+			   
+			   
+	#File:conc epts
+			   
+	{ include: [ "<yvals_core.h>", private, "<concepts>", public ] },
+	{ include: [ "<type_traits>", public, "<concepts>", public ] },
+	{ include: [ "<vcruntime_new.h>", public, "<concepts>", public ] },
+			   
+			   
+	#File:cond ition_variable
+			   
+	{ include: [ "<yvals_core.h>", private, "<condition_variable>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<condition_variable>", public ] },
+	{ include: [ "<memory>", public, "<condition_variable>", public ] },
+	{ include: [ "<mutex>", public, "<condition_variable>", public ] },
+	{ include: [ "<xthreads.h>", private, "<condition_variable>", public ] },
+	{ include: [ "<stop_token>", public, "<condition_variable>", public ] },
+			   
+			   
+	#File:coro utine
+			   
+	{ include: [ "<yvals_core.h>", private, "<coroutine>", public ] },
+	{ include: [ "<compare>", public, "<coroutine>", public ] },
+	{ include: [ "<type_traits>", public, "<coroutine>", public ] },
+			   
+			   
+	#File:cset jmp
+			   
+	{ include: [ "<yvals_core.h>", private, "<csetjmp>", public ] },
+	{ include: [ "<setjmp.h>", public, "<csetjmp>", public ] },
+			   
+			   
+	#File:csig nal
+			   
+	{ include: [ "<yvals_core.h>", private, "<csignal>", public ] },
+	{ include: [ "<signal.h>", public, "<csignal>", public ] },
+			   
+			   
+	#File:cstd align
+			   
+	{ include: [ "<yvals.h>", private, "<cstdalign>", public ] },
+			   
+			   
+	#File:cstd arg
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstdarg>", public ] },
+	{ include: [ "<stdarg.h>", public, "<cstdarg>", public ] },
+			   
+			   
+	#File:cstd bool
+			   
+	{ include: [ "<yvals.h>", private, "<cstdbool>", public ] },
+	{ include: [ "<stdbool.h>", public, "<cstdbool>", public ] },
+			   
+			   
+	#File:cstd def
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstddef>", public ] },
+	{ include: [ "<stddef.h>", public, "<cstddef>", public ] },
+	{ include: [ "<xtr1common>", private, "<cstddef>", public ] },
+			   
+			   
+	#File:cstd int
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstdint>", public ] },
+	{ include: [ "<stdint.h>", public, "<cstdint>", public ] },
+			   
+			   
+	#File:cstd io
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstdio>", public ] },
+	{ include: [ "<stdio.h>", public, "<cstdio>", public ] },
+			   
+			   
+	#File:cstd lib
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstdlib>", public ] },
+	{ include: [ "<math.h>", public, "<cstdlib>", public ] },
+	{ include: [ "<stdlib.h>", public, "<cstdlib>", public ] },
+			   
+			   
+	#File:cstr ing
+			   
+	{ include: [ "<yvals_core.h>", private, "<cstring>", public ] },
+	{ include: [ "<string.h>", public, "<cstring>", public ] },
+			   
+			   
+	#File:ctgm ath
+			   
+	{ include: [ "<yvals_core.h>", private, "<ctgmath>", public ] },
+	{ include: [ "<cmath>", public, "<ctgmath>", public ] },
+	{ include: [ "<complex>", public, "<ctgmath>", public ] },
+			   
+			   
+	#File:ctim e
+			   
+	{ include: [ "<yvals_core.h>", private, "<ctime>", public ] },
+	{ include: [ "<time.h>", public, "<ctime>", public ] },
+			   
+			   
+	#File:cuch ar
+			   
+	{ include: [ "<yvals_core.h>", private, "<cuchar>", public ] },
+	{ include: [ "<uchar.h>", public, "<cuchar>", public ] },
+			   
+			   
+	#File:8859 _1
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_1>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_1>", public ] },
+			   
+			   
+	#File:8859 _10
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_10>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_10>", public ] },
+			   
+			   
+	#File:8859 _13
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_13>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_13>", public ] },
+			   
+			   
+	#File:8859 _14
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_14>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_14>", public ] },
+			   
+			   
+	#File:8859 _15
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_15>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_15>", public ] },
+			   
+			   
+	#File:8859 _16
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_16>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_16>", public ] },
+			   
+			   
+	#File:8859 _2
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_2>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_2>", public ] },
+			   
+			   
+	#File:8859 _3
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_3>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_3>", public ] },
+			   
+			   
+	#File:8859 _4
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_4>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_4>", public ] },
+			   
+			   
+	#File:8859 _5
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_5>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_5>", public ] },
+			   
+			   
+	#File:8859 _6
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_6>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_6>", public ] },
+			   
+			   
+	#File:8859 _7
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_7>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_7>", public ] },
+			   
+			   
+	#File:8859 _8
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_8>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_8>", public ] },
+			   
+			   
+	#File:8859 _9
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/8859_9>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/8859_9>", public ] },
+			   
+			   
+	#File:balt ic
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/baltic>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/baltic>", public ] },
+			   
+			   
+	#File:big5 
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/big5>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/big5>", public ] },
+			   
+			   
+	#File:cp03 7
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp037>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp037>", public ] },
+			   
+			   
+	#File:cp10 06
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1006>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1006>", public ] },
+			   
+			   
+	#File:cp10 26
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1026>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1026>", public ] },
+			   
+			   
+	#File:cp12 50
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1250>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1250>", public ] },
+			   
+			   
+	#File:cp12 51
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1251>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1251>", public ] },
+			   
+			   
+	#File:cp12 52
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1252>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1252>", public ] },
+			   
+			   
+	#File:cp12 53
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1253>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1253>", public ] },
+			   
+			   
+	#File:cp12 54
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1254>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1254>", public ] },
+			   
+			   
+	#File:cp12 55
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1255>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1255>", public ] },
+			   
+			   
+	#File:cp12 56
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1256>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1256>", public ] },
+			   
+			   
+	#File:cp12 57
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1257>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1257>", public ] },
+			   
+			   
+	#File:cp12 58
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp1258>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp1258>", public ] },
+			   
+			   
+	#File:cp42 4
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp424>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp424>", public ] },
+			   
+			   
+	#File:cp43 7
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp437>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp437>", public ] },
+			   
+			   
+	#File:cp50 0
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp500>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp500>", public ] },
+			   
+			   
+	#File:cp73 7
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp737>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp737>", public ] },
+			   
+			   
+	#File:cp77 5
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp775>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp775>", public ] },
+			   
+			   
+	#File:cp85 0
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp850>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp850>", public ] },
+			   
+			   
+	#File:cp85 2
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp852>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp852>", public ] },
+			   
+			   
+	#File:cp85 5
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp855>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp855>", public ] },
+			   
+			   
+	#File:cp85 6
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp856>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp856>", public ] },
+			   
+			   
+	#File:cp85 7
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp857>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp857>", public ] },
+			   
+			   
+	#File:cp86 0
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp860>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp860>", public ] },
+			   
+			   
+	#File:cp86 1
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp861>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp861>", public ] },
+			   
+			   
+	#File:cp86 2
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp862>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp862>", public ] },
+			   
+			   
+	#File:cp86 3
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp863>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp863>", public ] },
+			   
+			   
+	#File:cp86 4
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp864>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp864>", public ] },
+			   
+			   
+	#File:cp86 5
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp865>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp865>", public ] },
+			   
+			   
+	#File:cp86 6
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp866>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp866>", public ] },
+			   
+			   
+	#File:cp86 9
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp869>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp869>", public ] },
+			   
+			   
+	#File:cp87 4
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp874>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp874>", public ] },
+			   
+			   
+	#File:cp87 5
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp875>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cp875>", public ] },
+			   
+			   
+	#File:cp93 2
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp932>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/cp932>", public ] },
+			   
+			   
+	#File:cp93 6
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp936>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/cp936>", public ] },
+			   
+			   
+	#File:cp94 9
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp949>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/cp949>", public ] },
+			   
+			   
+	#File:cp95 0
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cp950>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/cp950>", public ] },
+			   
+			   
+	#File:cyri llic
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/cyrillic>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/cyrillic>", public ] },
+			   
+			   
+	#File:ebcd ic
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/ebcdic>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/ebcdic>", public ] },
+	{ include: [ "<locale>", public, "<cvt/ebcdic>", public ] },
+			   
+			   
+	#File:euc  
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/euc>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/euc>", public ] },
+			   
+			   
+	#File:euc_ 0208
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/euc_0208>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/euc_0208>", public ] },
+	{ include: [ "<locale>", public, "<cvt/euc_0208>", public ] },
+			   
+			   
+	#File:gb12 345
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/gb12345>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/gb12345>", public ] },
+			   
+			   
+	#File:gb23 12
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/gb2312>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/gb2312>", public ] },
+			   
+			   
+	#File:gree k
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/greek>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/greek>", public ] },
+			   
+			   
+	#File:icel and
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/iceland>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/iceland>", public ] },
+			   
+			   
+	#File:jis  
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/jis>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/jis>", public ] },
+	{ include: [ "<cvt/xjis>", public, "<cvt/jis>", public ] },
+			   
+			   
+	#File:jis0 201
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/jis0201>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/jis0201>", public ] },
+			   
+			   
+	#File:jis_ 0208
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/jis_0208>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/jis_0208>", public ] },
+	{ include: [ "<locale>", public, "<cvt/jis_0208>", public ] },
+			   
+			   
+	#File:ksc5 601
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/ksc5601>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/ksc5601>", public ] },
+			   
+			   
+	#File:lati n2
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/latin2>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/latin2>", public ] },
+			   
+			   
+	#File:one_ one
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/one_one>", public ] },
+	{ include: [ "<codecvt>", public, "<cvt/one_one>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/one_one>", public ] },
+	{ include: [ "<locale>", public, "<cvt/one_one>", public ] },
+			   
+			   
+	#File:roma n
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/roman>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/roman>", public ] },
+			   
+			   
+	#File:sjis 
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/sjis>", public ] },
+	{ include: [ "<cvt/xtwo_byte>", public, "<cvt/sjis>", public ] },
+			   
+			   
+	#File:sjis _0208
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/sjis_0208>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/sjis_0208>", public ] },
+	{ include: [ "<locale>", public, "<cvt/sjis_0208>", public ] },
+			   
+			   
+	#File:turk ish
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/turkish>", public ] },
+	{ include: [ "<cvt/xone_byte>", public, "<cvt/turkish>", public ] },
+			   
+			   
+	#File:utf1 6
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/utf16>", public ] },
+	{ include: [ "<codecvt>", public, "<cvt/utf16>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/utf16>", public ] },
+	{ include: [ "<locale>", public, "<cvt/utf16>", public ] },
+			   
+			   
+	#File:utf8 
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/utf8>", public ] },
+	{ include: [ "<codecvt>", public, "<cvt/utf8>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/utf8>", public ] },
+	{ include: [ "<locale>", public, "<cvt/utf8>", public ] },
+			   
+			   
+	#File:utf8 _utf16
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/utf8_utf16>", public ] },
+	{ include: [ "<codecvt>", public, "<cvt/utf8_utf16>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/utf8_utf16>", public ] },
+	{ include: [ "<locale>", public, "<cvt/utf8_utf16>", public ] },
+			   
+			   
+	#File:wbuf fer
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/wbuffer>", public ] },
+	{ include: [ "<streambuf>", public, "<cvt/wbuffer>", public ] },
+	{ include: [ "<xstring>", private, "<cvt/wbuffer>", public ] },
+			   
+			   
+	#File:wstr ing
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/wstring>", public ] },
+	{ include: [ "<cstring>", public, "<cvt/wstring>", public ] },
+	{ include: [ "<locale>", public, "<cvt/wstring>", public ] },
+	{ include: [ "<stdexcept>", public, "<cvt/wstring>", public ] },
+	{ include: [ "<xstring>", private, "<cvt/wstring>", public ] },
+			   
+			   
+	#File:xjis 
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/xjis>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/xjis>", public ] },
+	{ include: [ "<locale>", public, "<cvt/xjis>", public ] },
+			   
+			   
+	#File:xone _byte
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/xone_byte>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/xone_byte>", public ] },
+	{ include: [ "<locale>", public, "<cvt/xone_byte>", public ] },
+			   
+			   
+	#File:xtwo _byte
+			   
+	{ include: [ "<yvals_core.h>", private, "<cvt/xtwo_byte>", public ] },
+	{ include: [ "<cwchar>", public, "<cvt/xtwo_byte>", public ] },
+	{ include: [ "<locale>", public, "<cvt/xtwo_byte>", public ] },
+			   
+			   
+	#File:cwch ar
+			   
+	{ include: [ "<yvals_core.h>", private, "<cwchar>", public ] },
+	{ include: [ "<wchar.h>", public, "<cwchar>", public ] },
+			   
+			   
+	#File:cwct ype
+			   
+	{ include: [ "<yvals_core.h>", private, "<cwctype>", public ] },
+	{ include: [ "<wctype.h>", public, "<cwctype>", public ] },
+			   
+			   
+	#File:dequ e
+			   
+	{ include: [ "<yvals_core.h>", private, "<deque>", public ] },
+	{ include: [ "<xmemory>", private, "<deque>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<deque>", public ] },
+			   
+			   
+	#File:exce ption
+			   
+	{ include: [ "<yvals.h>", private, "<exception>", public ] },
+	{ include: [ "<type_traits>", public, "<exception>", public ] },
+	{ include: [ "<malloc.h>", public, "<exception>", public ] },
+	{ include: [ "<vcruntime_exception.h>", public, "<exception>", public ] },
+			   
+			   
+	#File:exec ution
+			   
+	{ include: [ "<yvals.h>", private, "<execution>", public ] },
+	{ include: [ "<algorithm>", public, "<execution>", public ] },
+	{ include: [ "<atomic>", public, "<execution>", public ] },
+	{ include: [ "<memory>", public, "<execution>", public ] },
+	{ include: [ "<mutex>", public, "<execution>", public ] },
+	{ include: [ "<numeric>", public, "<execution>", public ] },
+	{ include: [ "<queue>", public, "<execution>", public ] },
+	{ include: [ "<vector>", public, "<execution>", public ] },
+	{ include: [ "<xbit_ops.h>", private, "<execution>", public ] },
+			   
+			   
+	#File:coro utine
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/coroutine>", public ] },
+	{ include: [ "<memory>", public, "<experimental/coroutine>", public ] },
+	{ include: [ "<new>", public, "<experimental/coroutine>", public ] },
+	{ include: [ "<exception>", public, "<experimental/coroutine>", public ] },
+	{ include: [ "<cstdint>", public, "<experimental/coroutine>", public ] },
+	{ include: [ "<type_traits>", public, "<experimental/coroutine>", public ] },
+			   
+			   
+	#File:dequ e
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/deque>", public ] },
+	{ include: [ "<deque>", public, "<experimental/deque>", public ] },
+			   
+			   
+	#File:file system
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/filesystem>", public ] },
+			   
+			   
+	#File:forw ard_list
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/forward_list>", public ] },
+	{ include: [ "<forward_list>", public, "<experimental/forward_list>", public ] },
+			   
+			   
+	#File:gene rator
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/generator>", public ] },
+	{ include: [ "<exception>", public, "<experimental/generator>", public ] },
+	{ include: [ "<memory>", public, "<experimental/generator>", public ] },
+	{ include: [ "<coroutine>", public, "<experimental/generator>", public ] },
+	{ include: [ "<experimental/resumable>", public, "<experimental/generator>", public ] },
+			   
+			   
+	#File:list 
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/list>", public ] },
+	{ include: [ "<list>", public, "<experimental/list>", public ] },
+			   
+			   
+	#File:map  
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/map>", public ] },
+	{ include: [ "<map>", public, "<experimental/map>", public ] },
+			   
+			   
+	#File:resu mable
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/resumable>", public ] },
+	{ include: [ "<memory>", public, "<experimental/resumable>", public ] },
+	{ include: [ "<new>", public, "<experimental/resumable>", public ] },
+	{ include: [ "<exception>", public, "<experimental/resumable>", public ] },
+	{ include: [ "<cstdint>", public, "<experimental/resumable>", public ] },
+	{ include: [ "<experimental/coroutine>", public, "<experimental/resumable>", public ] },
+	{ include: [ "<type_traits>", public, "<experimental/resumable>", public ] },
+			   
+			   
+	#File:set  
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/set>", public ] },
+	{ include: [ "<set>", public, "<experimental/set>", public ] },
+			   
+			   
+	#File:stri ng
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/string>", public ] },
+	{ include: [ "<xstring>", private, "<experimental/string>", public ] },
+			   
+			   
+	#File:unor dered_map
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/unordered_map>", public ] },
+	{ include: [ "<unordered_map>", public, "<experimental/unordered_map>", public ] },
+			   
+			   
+	#File:unor dered_set
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/unordered_set>", public ] },
+	{ include: [ "<unordered_set>", public, "<experimental/unordered_set>", public ] },
+			   
+			   
+	#File:vect or
+			   
+	{ include: [ "<yvals_core.h>", private, "<experimental/vector>", public ] },
+	{ include: [ "<vector>", public, "<experimental/vector>", public ] },
+			   
+			   
+	#File:file system
+			   
+	{ include: [ "<yvals_core.h>", private, "<filesystem>", public ] },
+	{ include: [ "<algorithm>", public, "<filesystem>", public ] },
+	{ include: [ "<chrono>", public, "<filesystem>", public ] },
+	{ include: [ "<cwchar>", public, "<filesystem>", public ] },
+	{ include: [ "<iomanip>", public, "<filesystem>", public ] },
+	{ include: [ "<list>", public, "<filesystem>", public ] },
+	{ include: [ "<locale>", public, "<filesystem>", public ] },
+	{ include: [ "<memory>", public, "<filesystem>", public ] },
+	{ include: [ "<string_view>", public, "<filesystem>", public ] },
+	{ include: [ "<system_error>", public, "<filesystem>", public ] },
+	{ include: [ "<utility>", public, "<filesystem>", public ] },
+	{ include: [ "<vector>", public, "<filesystem>", public ] },
+	{ include: [ "<xfilesystem_abi.h>", private, "<filesystem>", public ] },
+	{ include: [ "<xstring>", private, "<filesystem>", public ] },
+	{ include: [ "<compare>", public, "<filesystem>", public ] },
+			   
+			   
+	#File:form at
+			   
+	{ include: [ "<yvals_core.h>", private, "<format>", public ] },
+	{ include: [ "<__msvc_format_ucd_tables.hpp>", private, "<format>", public ] },
+	{ include: [ "<algorithm>", public, "<format>", public ] },
+	{ include: [ "<charconv>", public, "<format>", public ] },
+	{ include: [ "<concepts>", public, "<format>", public ] },
+	{ include: [ "<cstdint>", public, "<format>", public ] },
+	{ include: [ "<exception>", public, "<format>", public ] },
+	{ include: [ "<iterator>", public, "<format>", public ] },
+	{ include: [ "<limits>", public, "<format>", public ] },
+	{ include: [ "<locale>", public, "<format>", public ] },
+	{ include: [ "<mutex>", public, "<format>", public ] },
+	{ include: [ "<stdexcept>", public, "<format>", public ] },
+	{ include: [ "<string>", public, "<format>", public ] },
+	{ include: [ "<string_view>", public, "<format>", public ] },
+	{ include: [ "<xfilesystem_abi.h>", private, "<format>", public ] },
+	{ include: [ "<xutility>", private, "<format>", public ] },
+			   
+			   
+	#File:forw ard_list
+			   
+	{ include: [ "<yvals_core.h>", private, "<forward_list>", public ] },
+	{ include: [ "<xmemory>", private, "<forward_list>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<forward_list>", public ] },
+			   
+			   
+	#File:fstr eam
+			   
+	{ include: [ "<yvals_core.h>", private, "<fstream>", public ] },
+	{ include: [ "<istream>", public, "<fstream>", public ] },
+			   
+			   
+	#File:func tional
+			   
+	{ include: [ "<yvals_core.h>", private, "<functional>", public ] },
+	{ include: [ "<exception>", public, "<functional>", public ] },
+	{ include: [ "<tuple>", public, "<functional>", public ] },
+	{ include: [ "<typeinfo>", public, "<functional>", public ] },
+	{ include: [ "<xmemory>", private, "<functional>", public ] },
+	{ include: [ "<xstddef>", private, "<functional>", public ] },
+	{ include: [ "<memory>", public, "<functional>", public ] },
+	{ include: [ "<unordered_map>", public, "<functional>", public ] },
+	{ include: [ "<compare>", public, "<functional>", public ] },
+			   
+			   
+	#File:futu re
+			   
+	{ include: [ "<yvals_core.h>", private, "<future>", public ] },
+	{ include: [ "<experimental/resumable>", public, "<future>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<future>", public ] },
+	{ include: [ "<condition_variable>", public, "<future>", public ] },
+	{ include: [ "<functional>", public, "<future>", public ] },
+	{ include: [ "<memory>", public, "<future>", public ] },
+	{ include: [ "<mutex>", public, "<future>", public ] },
+	{ include: [ "<ppltasks.h>", public, "<future>", public ] },
+	{ include: [ "<system_error>", public, "<future>", public ] },
+	{ include: [ "<thread>", public, "<future>", public ] },
+	{ include: [ "<utility>", public, "<future>", public ] },
+			   
+			   
+	#File:hash _map
+			   
+	{ include: [ "<yvals_core.h>", private, "<hash_map>", public ] },
+	{ include: [ "<xhash>", private, "<hash_map>", public ] },
+			   
+			   
+	#File:hash _set
+			   
+	{ include: [ "<yvals_core.h>", private, "<hash_set>", public ] },
+	{ include: [ "<xhash>", private, "<hash_set>", public ] },
+			   
+			   
+	#File:init ializer_list
+			   
+	{ include: [ "<yvals_core.h>", private, "<initializer_list>", public ] },
+	{ include: [ "<cstddef>", public, "<initializer_list>", public ] },
+			   
+			   
+	#File:ioma nip
+			   
+	{ include: [ "<yvals_core.h>", private, "<iomanip>", public ] },
+	{ include: [ "<istream>", public, "<iomanip>", public ] },
+	{ include: [ "<type_traits>", public, "<iomanip>", public ] },
+	{ include: [ "<xlocmon>", private, "<iomanip>", public ] },
+	{ include: [ "<xloctime>", private, "<iomanip>", public ] },
+			   
+			   
+	#File:ios  
+			   
+	{ include: [ "<yvals_core.h>", private, "<ios>", public ] },
+	{ include: [ "<xlocnum>", private, "<ios>", public ] },
+			   
+			   
+	#File:iosf wd
+			   
+	{ include: [ "<yvals.h>", private, "<iosfwd>", public ] },
+	{ include: [ "<cstdio>", public, "<iosfwd>", public ] },
+	{ include: [ "<cstring>", public, "<iosfwd>", public ] },
+	{ include: [ "<cwchar>", public, "<iosfwd>", public ] },
+	{ include: [ "<xstddef>", private, "<iosfwd>", public ] },
+			   
+			   
+	#File:iost ream
+			   
+	{ include: [ "<yvals_core.h>", private, "<iostream>", public ] },
+	{ include: [ "<istream>", public, "<iostream>", public ] },
+			   
+			   
+	#File:istr eam
+			   
+	{ include: [ "<yvals_core.h>", private, "<istream>", public ] },
+	{ include: [ "<ostream>", public, "<istream>", public ] },
+			   
+			   
+	#File:iter ator
+			   
+	{ include: [ "<yvals_core.h>", private, "<iterator>", public ] },
+	{ include: [ "<iosfwd>", public, "<iterator>", public ] },
+	{ include: [ "<xutility>", private, "<iterator>", public ] },
+			   
+			   
+	#File:latc h
+			   
+	{ include: [ "<yvals.h>", private, "<latch>", public ] },
+	{ include: [ "<atomic>", public, "<latch>", public ] },
+	{ include: [ "<climits>", public, "<latch>", public ] },
+			   
+			   
+	#File:limi ts
+			   
+	{ include: [ "<yvals_core.h>", private, "<limits>", public ] },
+	{ include: [ "<cfloat>", public, "<limits>", public ] },
+	{ include: [ "<climits>", public, "<limits>", public ] },
+	{ include: [ "<cwchar>", public, "<limits>", public ] },
+	{ include: [ "<intrin0.h>", public, "<limits>", public ] },
+	{ include: [ "<isa_availability.h>", public, "<limits>", public ] },
+	{ include: [ "<xstddef>", private, "<limits>", public ] },
+			   
+			   
+	#File:list 
+			   
+	{ include: [ "<yvals_core.h>", private, "<list>", public ] },
+	{ include: [ "<xmemory>", private, "<list>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<list>", public ] },
+			   
+			   
+	#File:loca le
+			   
+	{ include: [ "<yvals_core.h>", private, "<locale>", public ] },
+	{ include: [ "<xlocbuf>", private, "<locale>", public ] },
+	{ include: [ "<xlocmes>", private, "<locale>", public ] },
+	{ include: [ "<xlocmon>", private, "<locale>", public ] },
+	{ include: [ "<xlocnum>", private, "<locale>", public ] },
+	{ include: [ "<xloctime>", private, "<locale>", public ] },
+	{ include: [ "<xstring>", private, "<locale>", public ] },
+			   
+			   
+	#File:map  
+			   
+	{ include: [ "<yvals_core.h>", private, "<map>", public ] },
+	{ include: [ "<tuple>", public, "<map>", public ] },
+	{ include: [ "<xtree>", private, "<map>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<map>", public ] },
+			   
+			   
+	#File:memo ry
+			   
+	{ include: [ "<yvals_core.h>", private, "<memory>", public ] },
+	{ include: [ "<exception>", public, "<memory>", public ] },
+	{ include: [ "<iosfwd>", public, "<memory>", public ] },
+	{ include: [ "<type_traits>", public, "<memory>", public ] },
+	{ include: [ "<typeinfo>", public, "<memory>", public ] },
+	{ include: [ "<xmemory>", private, "<memory>", public ] },
+	{ include: [ "<atomic>", public, "<memory>", public ] },
+			   
+			   
+	#File:memo ry_resource
+			   
+	{ include: [ "<yvals.h>", private, "<memory_resource>", public ] },
+	{ include: [ "<vector>", public, "<memory_resource>", public ] },
+	{ include: [ "<xbit_ops.h>", private, "<memory_resource>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<memory_resource>", public ] },
+	{ include: [ "<xutility>", private, "<memory_resource>", public ] },
+	{ include: [ "<mutex>", public, "<memory_resource>", public ] },
+			   
+			   
+	#File:mute x
+			   
+	{ include: [ "<yvals_core.h>", private, "<mutex>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<mutex>", public ] },
+	{ include: [ "<cstdlib>", public, "<mutex>", public ] },
+	{ include: [ "<system_error>", public, "<mutex>", public ] },
+	{ include: [ "<thread>", public, "<mutex>", public ] },
+	{ include: [ "<utility>", public, "<mutex>", public ] },
+	{ include: [ "<xcall_once.h>", private, "<mutex>", public ] },
+			   
+			   
+	#File:new  
+			   
+	{ include: [ "<yvals_core.h>", private, "<new>", public ] },
+	{ include: [ "<exception>", public, "<new>", public ] },
+	{ include: [ "<vcruntime_new.h>", public, "<new>", public ] },
+			   
+			   
+	#File:numb ers
+			   
+	{ include: [ "<yvals_core.h>", private, "<numbers>", public ] },
+	{ include: [ "<concepts>", public, "<numbers>", public ] },
+	{ include: [ "<xstddef>", private, "<numbers>", public ] },
+			   
+			   
+	#File:nume ric
+			   
+	{ include: [ "<yvals_core.h>", private, "<numeric>", public ] },
+	{ include: [ "<xutility>", private, "<numeric>", public ] },
+	{ include: [ "<limits>", public, "<numeric>", public ] },
+			   
+			   
+	#File:opti onal
+			   
+	{ include: [ "<yvals.h>", private, "<optional>", public ] },
+	{ include: [ "<compare>", public, "<optional>", public ] },
+	{ include: [ "<exception>", public, "<optional>", public ] },
+	{ include: [ "<initializer_list>", public, "<optional>", public ] },
+	{ include: [ "<type_traits>", public, "<optional>", public ] },
+	{ include: [ "<utility>", public, "<optional>", public ] },
+	{ include: [ "<xmemory>", private, "<optional>", public ] },
+	{ include: [ "<xsmf_control.h>", private, "<optional>", public ] },
+			   
+			   
+	#File:ostr eam
+			   
+	{ include: [ "<yvals_core.h>", private, "<ostream>", public ] },
+	{ include: [ "<ios>", public, "<ostream>", public ] },
+			   
+			   
+	#File:queu e
+			   
+	{ include: [ "<yvals_core.h>", private, "<queue>", public ] },
+	{ include: [ "<algorithm>", public, "<queue>", public ] },
+	{ include: [ "<deque>", public, "<queue>", public ] },
+	{ include: [ "<vector>", public, "<queue>", public ] },
+			   
+			   
+	#File:rand om
+			   
+	{ include: [ "<yvals_core.h>", private, "<random>", public ] },
+	{ include: [ "<algorithm>", public, "<random>", public ] },
+	{ include: [ "<cmath>", public, "<random>", public ] },
+	{ include: [ "<cstdint>", public, "<random>", public ] },
+	{ include: [ "<ios>", public, "<random>", public ] },
+	{ include: [ "<vector>", public, "<random>", public ] },
+	{ include: [ "<xbit_ops.h>", private, "<random>", public ] },
+	{ include: [ "<xstring>", private, "<random>", public ] },
+			   
+			   
+	#File:rang es
+			   
+	{ include: [ "<yvals_core.h>", private, "<ranges>", public ] },
+	{ include: [ "<__msvc_int128.hpp>", private, "<ranges>", public ] },
+	{ include: [ "<iosfwd>", public, "<ranges>", public ] },
+	{ include: [ "<iterator>", public, "<ranges>", public ] },
+	{ include: [ "<limits>", public, "<ranges>", public ] },
+	{ include: [ "<span>", public, "<ranges>", public ] },
+	{ include: [ "<string_view>", public, "<ranges>", public ] },
+	{ include: [ "<tuple>", public, "<ranges>", public ] },
+			   
+			   
+	#File:rati o
+			   
+	{ include: [ "<yvals_core.h>", private, "<ratio>", public ] },
+	{ include: [ "<cstdint>", public, "<ratio>", public ] },
+	{ include: [ "<type_traits>", public, "<ratio>", public ] },
+			   
+			   
+	#File:rege x
+			   
+	{ include: [ "<yvals_core.h>", private, "<regex>", public ] },
+	{ include: [ "<algorithm>", public, "<regex>", public ] },
+	{ include: [ "<cctype>", public, "<regex>", public ] },
+	{ include: [ "<climits>", public, "<regex>", public ] },
+	{ include: [ "<cstdlib>", public, "<regex>", public ] },
+	{ include: [ "<cstring>", public, "<regex>", public ] },
+	{ include: [ "<cwchar>", public, "<regex>", public ] },
+	{ include: [ "<iterator>", public, "<regex>", public ] },
+	{ include: [ "<locale>", public, "<regex>", public ] },
+	{ include: [ "<memory>", public, "<regex>", public ] },
+	{ include: [ "<stdexcept>", public, "<regex>", public ] },
+	{ include: [ "<string>", public, "<regex>", public ] },
+	{ include: [ "<utility>", public, "<regex>", public ] },
+	{ include: [ "<vector>", public, "<regex>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<regex>", public ] },
+			   
+			   
+	#File:scop ed_allocator
+			   
+	{ include: [ "<yvals_core.h>", private, "<scoped_allocator>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<scoped_allocator>", public ] },
+			   
+			   
+	#File:sema phore
+			   
+	{ include: [ "<yvals.h>", private, "<semaphore>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<semaphore>", public ] },
+	{ include: [ "<atomic>", public, "<semaphore>", public ] },
+	{ include: [ "<climits>", public, "<semaphore>", public ] },
+			   
+			   
+	#File:set  
+			   
+	{ include: [ "<yvals_core.h>", private, "<set>", public ] },
+	{ include: [ "<xtree>", private, "<set>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<set>", public ] },
+			   
+			   
+	#File:shar ed_mutex
+			   
+	{ include: [ "<yvals_core.h>", private, "<shared_mutex>", public ] },
+	{ include: [ "<mutex>", public, "<shared_mutex>", public ] },
+	{ include: [ "<xthreads.h>", private, "<shared_mutex>", public ] },
+	{ include: [ "<condition_variable>", public, "<shared_mutex>", public ] },
+			   
+			   
+	#File:sour ce_location
+			   
+	{ include: [ "<yvals_core.h>", private, "<source_location>", public ] },
+	{ include: [ "<cstdint>", public, "<source_location>", public ] },
+			   
+			   
+	#File:span 
+			   
+	{ include: [ "<yvals_core.h>", private, "<span>", public ] },
+	{ include: [ "<compare>", public, "<span>", public ] },
+	{ include: [ "<cstddef>", public, "<span>", public ] },
+	{ include: [ "<type_traits>", public, "<span>", public ] },
+	{ include: [ "<xutility>", private, "<span>", public ] },
+			   
+			   
+	#File:span stream
+			   
+	{ include: [ "<yvals.h>", private, "<spanstream>", public ] },
+	{ include: [ "<concepts>", public, "<spanstream>", public ] },
+	{ include: [ "<istream>", public, "<spanstream>", public ] },
+	{ include: [ "<ostream>", public, "<spanstream>", public ] },
+	{ include: [ "<span>", public, "<spanstream>", public ] },
+	{ include: [ "<streambuf>", public, "<spanstream>", public ] },
+	{ include: [ "<xutility>", private, "<spanstream>", public ] },
+			   
+			   
+	#File:sstr eam
+			   
+	{ include: [ "<yvals_core.h>", private, "<sstream>", public ] },
+	{ include: [ "<istream>", public, "<sstream>", public ] },
+	{ include: [ "<string>", public, "<sstream>", public ] },
+			   
+			   
+	#File:stac k
+			   
+	{ include: [ "<yvals_core.h>", private, "<stack>", public ] },
+	{ include: [ "<deque>", public, "<stack>", public ] },
+			   
+			   
+	#File:stde xcept
+			   
+	{ include: [ "<yvals_core.h>", private, "<stdexcept>", public ] },
+	{ include: [ "<exception>", public, "<stdexcept>", public ] },
+	{ include: [ "<xstring>", private, "<stdexcept>", public ] },
+			   
+			   
+	#File:stop _token
+			   
+	{ include: [ "<yvals.h>", private, "<stop_token>", public ] },
+	{ include: [ "<atomic>", public, "<stop_token>", public ] },
+	{ include: [ "<xmemory>", private, "<stop_token>", public ] },
+	{ include: [ "<xthreads.h>", private, "<stop_token>", public ] },
+			   
+			   
+	#File:stre ambuf
+			   
+	{ include: [ "<yvals_core.h>", private, "<streambuf>", public ] },
+	{ include: [ "<xiosbase>", private, "<streambuf>", public ] },
+			   
+			   
+	#File:stri ng
+			   
+	{ include: [ "<yvals_core.h>", private, "<string>", public ] },
+	{ include: [ "<xstring>", private, "<string>", public ] },
+	{ include: [ "<cctype>", public, "<string>", public ] },
+			   
+			   
+	#File:stri ng_view
+			   
+	{ include: [ "<yvals.h>", private, "<string_view>", public ] },
+	{ include: [ "<xstring>", private, "<string_view>", public ] },
+			   
+			   
+	#File:strs tream
+			   
+	{ include: [ "<yvals_core.h>", private, "<strstream>", public ] },
+	{ include: [ "<istream>", public, "<strstream>", public ] },
+			   
+			   
+	#File:sync stream
+			   
+	{ include: [ "<yvals.h>", private, "<syncstream>", public ] },
+	{ include: [ "<memory>", public, "<syncstream>", public ] },
+	{ include: [ "<ostream>", public, "<syncstream>", public ] },
+	{ include: [ "<shared_mutex>", public, "<syncstream>", public ] },
+	{ include: [ "<streambuf>", public, "<syncstream>", public ] },
+			   
+			   
+	#File:syst em_error
+			   
+	{ include: [ "<yvals.h>", private, "<system_error>", public ] },
+	{ include: [ "<__msvc_system_error_abi.hpp>", private, "<system_error>", public ] },
+	{ include: [ "<cerrno>", public, "<system_error>", public ] },
+	{ include: [ "<cstdlib>", public, "<system_error>", public ] },
+	{ include: [ "<stdexcept>", public, "<system_error>", public ] },
+	{ include: [ "<xcall_once.h>", private, "<system_error>", public ] },
+	{ include: [ "<xerrc.h>", private, "<system_error>", public ] },
+	{ include: [ "<atomic>", public, "<system_error>", public ] },
+	{ include: [ "<compare>", public, "<system_error>", public ] },
+			   
+			   
+	#File:thre ad
+			   
+	{ include: [ "<yvals_core.h>", private, "<thread>", public ] },
+	{ include: [ "<__msvc_chrono.hpp>", private, "<thread>", public ] },
+	{ include: [ "<memory>", public, "<thread>", public ] },
+	{ include: [ "<process.h>", public, "<thread>", public ] },
+	{ include: [ "<tuple>", public, "<thread>", public ] },
+	{ include: [ "<xthreads.h>", private, "<thread>", public ] },
+	{ include: [ "<compare>", public, "<thread>", public ] },
+	{ include: [ "<stop_token>", public, "<thread>", public ] },
+			   
+			   
+	#File:tupl e
+			   
+	{ include: [ "<yvals_core.h>", private, "<tuple>", public ] },
+	{ include: [ "<compare>", public, "<tuple>", public ] },
+	{ include: [ "<type_traits>", public, "<tuple>", public ] },
+	{ include: [ "<xutility>", private, "<tuple>", public ] },
+			   
+			   
+	#File:type index
+			   
+	{ include: [ "<yvals_core.h>", private, "<typeindex>", public ] },
+	{ include: [ "<typeinfo>", public, "<typeindex>", public ] },
+	{ include: [ "<compare>", public, "<typeindex>", public ] },
+			   
+			   
+	#File:type info
+			   
+	{ include: [ "<yvals_core.h>", private, "<typeinfo>", public ] },
+	{ include: [ "<exception>", public, "<typeinfo>", public ] },
+	{ include: [ "<vcruntime_typeinfo.h>", public, "<typeinfo>", public ] },
+			   
+			   
+	#File:type _traits
+			   
+	{ include: [ "<yvals_core.h>", private, "<type_traits>", public ] },
+	{ include: [ "<cstdint>", public, "<type_traits>", public ] },
+	{ include: [ "<xstddef>", private, "<type_traits>", public ] },
+			   
+			   
+	#File:unor dered_map
+			   
+	{ include: [ "<yvals_core.h>", private, "<unordered_map>", public ] },
+	{ include: [ "<xhash>", private, "<unordered_map>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<unordered_map>", public ] },
+			   
+			   
+	#File:unor dered_set
+			   
+	{ include: [ "<yvals_core.h>", private, "<unordered_set>", public ] },
+	{ include: [ "<xhash>", private, "<unordered_set>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<unordered_set>", public ] },
+			   
+			   
+	#File:util ity
+			   
+	{ include: [ "<yvals_core.h>", private, "<utility>", public ] },
+	{ include: [ "<type_traits>", public, "<utility>", public ] },
+	{ include: [ "<xstddef>", private, "<utility>", public ] },
+	{ include: [ "<concepts>", public, "<utility>", public ] },
+	{ include: [ "<compare>", public, "<utility>", public ] },
+			   
+			   
+	#File:vala rray
+			   
+	{ include: [ "<yvals_core.h>", private, "<valarray>", public ] },
+	{ include: [ "<cmath>", public, "<valarray>", public ] },
+	{ include: [ "<xmemory>", private, "<valarray>", public ] },
+			   
+			   
+	#File:vari ant
+			   
+	{ include: [ "<yvals.h>", private, "<variant>", public ] },
+	{ include: [ "<exception>", public, "<variant>", public ] },
+	{ include: [ "<initializer_list>", public, "<variant>", public ] },
+	{ include: [ "<type_traits>", public, "<variant>", public ] },
+	{ include: [ "<utility>", public, "<variant>", public ] },
+	{ include: [ "<xmemory>", private, "<variant>", public ] },
+	{ include: [ "<xsmf_control.h>", private, "<variant>", public ] },
+	{ include: [ "<xstddef>", private, "<variant>", public ] },
+			   
+			   
+	#File:vect or
+			   
+	{ include: [ "<yvals_core.h>", private, "<vector>", public ] },
+	{ include: [ "<xmemory>", private, "<vector>", public ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<vector>", public ] },
+			   
+			   
+	#File:vers ion
+			   
+	{ include: [ "<yvals_core.h>", private, "<version>", public ] },
+			   
+			   
+	#File:xfac et
+			   
+	{ include: [ "<yvals.h>", private, "<xfacet>", private ] },
+			   
+			   
+	#File:xhas h
+			   
+	{ include: [ "<yvals_core.h>", private, "<xhash>", private ] },
+	{ include: [ "<cmath>", public, "<xhash>", private ] },
+	{ include: [ "<cstring>", public, "<xhash>", private ] },
+	{ include: [ "<cwchar>", public, "<xhash>", private ] },
+	{ include: [ "<list>", public, "<xhash>", private ] },
+	{ include: [ "<tuple>", public, "<xhash>", private ] },
+	{ include: [ "<vector>", public, "<xhash>", private ] },
+	{ include: [ "<xbit_ops.h>", private, "<xhash>", private ] },
+	{ include: [ "<xstring>", private, "<xhash>", private ] },
+	{ include: [ "<xnode_handle.h>", private, "<xhash>", private ] },
+			   
+			   
+	#File:xios base
+			   
+	{ include: [ "<yvals_core.h>", private, "<xiosbase>", private ] },
+	{ include: [ "<share.h>", public, "<xiosbase>", private ] },
+	{ include: [ "<system_error>", public, "<xiosbase>", private ] },
+	{ include: [ "<xlocale>", private, "<xiosbase>", private ] },
+			   
+			   
+	#File:xloc ale
+			   
+	{ include: [ "<yvals_core.h>", private, "<xlocale>", private ] },
+	{ include: [ "<climits>", public, "<xlocale>", private ] },
+	{ include: [ "<cstring>", public, "<xlocale>", private ] },
+	{ include: [ "<memory>", public, "<xlocale>", private ] },
+	{ include: [ "<typeinfo>", public, "<xlocale>", private ] },
+	{ include: [ "<xfacet>", private, "<xlocale>", private ] },
+	{ include: [ "<xlocinfo>", private, "<xlocale>", private ] },
+			   
+			   
+	#File:xloc buf
+			   
+	{ include: [ "<yvals_core.h>", private, "<xlocbuf>", private ] },
+	{ include: [ "<streambuf>", public, "<xlocbuf>", private ] },
+			   
+			   
+	#File:xloc info
+			   
+	{ include: [ "<yvals.h>", private, "<xlocinfo>", private ] },
+	{ include: [ "<__msvc_xlocinfo_types.hpp>", private, "<xlocinfo>", private ] },
+	{ include: [ "<cctype>", public, "<xlocinfo>", private ] },
+	{ include: [ "<clocale>", public, "<xlocinfo>", private ] },
+	{ include: [ "<cstdlib>", public, "<xlocinfo>", private ] },
+	{ include: [ "<cwchar>", public, "<xlocinfo>", private ] },
+	{ include: [ "<xstddef>", private, "<xlocinfo>", private ] },
+	{ include: [ "<xstring>", private, "<xlocinfo>", private ] },
+			   
+			   
+	#File:xloc mes
+			   
+	{ include: [ "<yvals_core.h>", private, "<xlocmes>", private ] },
+	{ include: [ "<xiosbase>", private, "<xlocmes>", private ] },
+			   
+			   
+	#File:xloc mon
+			   
+	{ include: [ "<yvals_core.h>", private, "<xlocmon>", private ] },
+	{ include: [ "<iterator>", public, "<xlocmon>", private ] },
+	{ include: [ "<xlocnum>", private, "<xlocmon>", private ] },
+			   
+			   
+	#File:xloc num
+			   
+	{ include: [ "<yvals_core.h>", private, "<xlocnum>", private ] },
+	{ include: [ "<climits>", public, "<xlocnum>", private ] },
+	{ include: [ "<cmath>", public, "<xlocnum>", private ] },
+	{ include: [ "<cstdio>", public, "<xlocnum>", private ] },
+	{ include: [ "<cstdlib>", public, "<xlocnum>", private ] },
+	{ include: [ "<iterator>", public, "<xlocnum>", private ] },
+	{ include: [ "<streambuf>", public, "<xlocnum>", private ] },
+			   
+			   
+	#File:xloc time
+			   
+	{ include: [ "<yvals_core.h>", private, "<xloctime>", private ] },
+	{ include: [ "<ctime>", public, "<xloctime>", private ] },
+	{ include: [ "<iterator>", public, "<xloctime>", private ] },
+	{ include: [ "<xlocnum>", private, "<xloctime>", private ] },
+			   
+			   
+	#File:xmem ory
+			   
+	{ include: [ "<yvals_core.h>", private, "<xmemory>", private ] },
+	{ include: [ "<cstdint>", public, "<xmemory>", private ] },
+	{ include: [ "<cstdlib>", public, "<xmemory>", private ] },
+	{ include: [ "<limits>", public, "<xmemory>", private ] },
+	{ include: [ "<new>", public, "<xmemory>", private ] },
+	{ include: [ "<xatomic.h>", private, "<xmemory>", private ] },
+	{ include: [ "<xutility>", private, "<xmemory>", private ] },
+	{ include: [ "<tuple>", public, "<xmemory>", private ] },
+			   
+			   
+	#File:xstd def
+			   
+	{ include: [ "<yvals_core.h>", private, "<xstddef>", private ] },
+	{ include: [ "<cstddef>", public, "<xstddef>", private ] },
+	{ include: [ "<cstdlib>", public, "<xstddef>", private ] },
+	{ include: [ "<initializer_list>", public, "<xstddef>", private ] },
+	{ include: [ "<xtr1common>", private, "<xstddef>", private ] },
+			   
+			   
+	#File:xstr ing
+			   
+	{ include: [ "<yvals_core.h>", private, "<xstring>", private ] },
+	{ include: [ "<iosfwd>", public, "<xstring>", private ] },
+	{ include: [ "<xmemory>", private, "<xstring>", private ] },
+	{ include: [ "<xpolymorphic_allocator.h>", private, "<xstring>", private ] },
+			   
+			   
+	#File:xtr1 common
+			   
+	{ include: [ "<yvals_core.h>", private, "<xtr1common>", private ] },
+			   
+			   
+	#File:xtre e
+			   
+	{ include: [ "<yvals_core.h>", private, "<xtree>", private ] },
+	{ include: [ "<xmemory>", private, "<xtree>", private ] },
+	{ include: [ "<xnode_handle.h>", private, "<xtree>", private ] },
+			   
+			   
+	#File:xuti lity
+			   
+	{ include: [ "<yvals.h>", private, "<xutility>", private ] },
+	{ include: [ "<climits>", public, "<xutility>", private ] },
+	{ include: [ "<cstdlib>", public, "<xutility>", private ] },
+	{ include: [ "<cstring>", public, "<xutility>", private ] },
+	{ include: [ "<utility>", public, "<xutility>", private ] },
+
+#misc
+	{ include: [ "<corecrt_math.h>", private, "<cmath>", public ] },
+	{ include: [ "<vcruntime_string.h>", private, "<cstring>", public ] },
+#Windows.h	
+	{ include: [ "\"Windows.h\"", private, "<Windows.h>", public ] },
+	{ include: [ "<winapifamily.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<sdkddkver.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winresrc.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<excpt.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<stdarg.h>", public, "<Windows.h>", public ] },
+	{ include: [ "<windef.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winbase.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<wingdi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winuser.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winnls.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<wincon.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winver.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winreg.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winnetwk.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<cderr.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<dde.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<ddeml.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<dlgs.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<lzexpand.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<mmsystem.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<nb30.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<rpc.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<shellapi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winperf.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winsock.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<wincrypt.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winefs.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winscard.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winspool.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<ole.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<ole2.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<commdlg.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<stralign.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winwlm.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<ole2.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<winsvc.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<mcx.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<imm.h>", private, "<Windows.h>", public ] },
+	
+#windef.h
+	{ include: [ "\"windef.h\"", private, "<windef.h>", private ] },
+	{ include: [ "<winapifamily.h>", private, "<windef.h>", private ] },
+	{ include: [ "<minwindef.h>", private, "<windef.h>", private ] },
+	{ include: [ "<winnt.h>", private, "<windef.h>", private ] },
+	
+	{ include: [ "<fileapi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<synchapi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<processthreadsapi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<handleapi.h>", private, "<Windows.h>", public ] },
+	{ include: [ "<processenv.h>", private, "<Windows.h>", public ] },
+]
