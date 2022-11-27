@@ -56,7 +56,7 @@ jobs:
         run: |
           cd llvm/llvm/
           dir
-          Rename-Item "$(Configuration) Configuration"
+          #Rename-Item "$(Configuration) Configuration"
           
       - name: Build LLVM
       # Build your program with the given configuration
