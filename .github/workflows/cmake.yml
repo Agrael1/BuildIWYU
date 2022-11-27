@@ -51,7 +51,7 @@ jobs:
       - name: Configure CMake LLVM
         # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: cmake -S ${{env.xpath}}/llvm/llvm -B ${{env.xpath}}/out_llvm -G "Ninja" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
+        run: cmake -S ${{env.xpath}}/llvm/llvm -B ${{env.xpath}}/out_llvm -G "Ninja" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DLLVM_ENABLE_PROJECTS="clang" -DCMAKE_C_COMPILER=clang-cl -DCMAKE_CXX_COMPILER=clang-cl
   
       - name: Build LLVM
       # Build your program with the given configuration
