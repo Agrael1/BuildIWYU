@@ -56,7 +56,7 @@ jobs:
         run: |
           cd ${{env.xpath}}/out_llvm
           dir
-          Rename-Item "$(Configuration) Configuration"
+          Rename-item '$(Configuration)' Configuration
           
       - name: Build LLVM
       # Build your program with the given configuration
