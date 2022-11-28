@@ -55,7 +55,7 @@ jobs:
       - name: Help
         run: |
           cd ${{env.xpath}}/out_llvm
-          Copy-Item -Path '$(Configuration)\*' -Destination CC -PassThru -Recurse
+          Copy-Item -Path '$(Configuration)\*' -Destination Configuration -PassThru -Recurse
           
       - name: Build LLVM
       # Build your program with the given configuration
