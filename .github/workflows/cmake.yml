@@ -54,6 +54,7 @@ jobs:
       #stupid fix, but that works
       - name: Help
         run: |
+          cd ${{env.xpath}}/out_llvm
           Copy-Item -Path '$(Configuration)\*' -Destination CC -PassThru -Recurse
           
       - name: Build LLVM
